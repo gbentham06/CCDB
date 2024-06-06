@@ -40,7 +40,7 @@ def run(sweets):
                                           total[3] * 2, total[4] * 2, total[5]]) / 17, 2)
     sweets.loc[row, 'votes'] += 1
 
-    sweets.to_csv('sweets.csv')
+    sweets.to_csv('sweets.csv', index=False)
 
 
 if __name__ == '__main__':
